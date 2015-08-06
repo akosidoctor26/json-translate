@@ -90,7 +90,9 @@ The result will be
 
 ###Array of Objects
 ```
-var originalJson = students: [
+var originalJson = 
+{
+students: [
 	{
 		name: "Student 1",
 		grades: [
@@ -124,7 +126,8 @@ var originalJson = students: [
 			}
 		]
 	},
-];
+]
+};
 
 var destDefinition = {
 	q1Grades: ["students", ["grades"["q1]]],
