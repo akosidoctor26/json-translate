@@ -58,7 +58,7 @@ function traverseSourceObject(sourceObject, arraySource, index) {
 		var value = _.pluck(sourceObject, _.first(sourceKey));
 		
 		//if the first item is a string then we are done
-		if(_.isString(_.first(value))) {
+		if(!_.isObject(_.first(value))) {
 			return value;
 		}
 		//if not string then it must be an object or array within the value

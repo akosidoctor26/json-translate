@@ -87,6 +87,7 @@ describe("json-translate", function() {
 		var destDefinition = {
 			seasons: ["seasons", ["name"]],
 			episodes: ["seasons", ["episodes", ["name"]]],
+			episodeNumbers: ["seasons", ["episodes", ["episodeNumber"]]]
 			// directors: ["seasons", ["episodes", ["directedBy"]]],
 		}		
 		
@@ -101,6 +102,7 @@ describe("json-translate", function() {
 				"Simpsons - 02 - Treehouse of Horror",
 				"Simpsons - 02 - Two Cars in Every Garage and Three Eyes on Every Fish"
 			],
+			episodeNumbers: [1,2,3,4,1,2,3,4]
 			/*
 			actual result: */
 			// directors: [
