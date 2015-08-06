@@ -1,15 +1,15 @@
 # json-translate
 Translate json object to another json object
-*Rename property
-*Flatten json object
-*Get values from deep nested properties
+ * Rename property
+ * Flatten json object
+ * Get values from deep nested properties
 
 ##Usage
 'var jsonTranslate = require("json-translate");'
 'jsonTranslate(sourceObject, destDefinition);'
 
 ###Nested properties
-'
+`
 var sourceObject = {
 		prop2: {
 			prop3: {
@@ -35,4 +35,13 @@ var sourceObject = {
 	};
 	
 	var result = jsonTranslate(data, destDefinition)
-'
+`
+
+The result will be 
+`{ 
+	value: "value",
+	value7: "value7" ,
+	value8: "value8",
+	value9: "value9",
+	value10: "value10"
+}`
