@@ -5,6 +5,7 @@ Translate json object to another json object
  * Get values from deep nested properties
 
 ##Installation
+`npm install json-translate`
 
 ##Usage
 ```
