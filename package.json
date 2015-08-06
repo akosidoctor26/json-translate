@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/akosidoctor/json-translate/issues"
   },
-  "homepage": "https://github.com/akosidoctor/json-translate#readme"
+  "homepage": "https://github.com/akosidoctor/json-translate#readme",
+  "dependencies": {
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "mocha": "2.2.5"
+  }
 }

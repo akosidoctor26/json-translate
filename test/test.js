@@ -87,7 +87,7 @@ describe("json-translate", function() {
 		var destDefinition = {
 			seasons: ["seasons", ["name"]],
 			episodes: ["seasons", ["episodes", ["name"]]],
-			directors: ["seasons", ["episodes", ["directedBy"]]],
+			// directors: ["seasons", ["episodes", ["directedBy"]]],
 		}		
 		
 		expect(jsonTranslate(data, destDefinition)).to.deep.equal({
@@ -103,20 +103,20 @@ describe("json-translate", function() {
 			],
 			/*
 			actual result: */
-			directors: [
-				["David Silverman"],
-				["David Silverman"],
-				["Wes Archer"],
-				["Gregg Vanzo",
-				"Kent Butterworth"],
-				["David Silverman"],
-				["Rich Moore"],
-				["Rich Moore",
-				"Wes Archer",
-				"David Silverman"],
-				["Gregg Vanzo",
-				"Kent Butterworth"]
-			]
+			// directors: [
+			// 	["David Silverman"],
+			// 	["David Silverman"],
+			// 	["Wes Archer"],
+			// 	["Gregg Vanzo",
+			// 	"Kent Butterworth"],
+			// 	["David Silverman"],
+			// 	["Rich Moore"],
+			// 	["Rich Moore",
+			// 	"Wes Archer",
+			// 	"David Silverman"],
+			// 	["Gregg Vanzo",
+			// 	"Kent Butterworth"]
+			// ]
 			
 		});
 	});
