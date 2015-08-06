@@ -24,6 +24,7 @@ property1: {
 define it in an array with property name values`["property1", "myObject"]`
 
 To get value of a property from array of objects
+*Source Json*
 ```
 property1 : [
 	{
@@ -40,9 +41,32 @@ property1 : [
 	}
 ]
 ```
-Put "myObject" property in an array in your definition to say that "property1" contains an array of objects that has property "myObject"
-`["property1", ["myObject]]`
+Put "myObject" property in an array in your definition to say that "property1" contains an array of objects that has property "myObject" `["property1", ["myObject]]`
 Adding a third item in the array will not be read `["property1", ["myObject], "ignore"]`
+
+Its also possible to have nested object in an array of objects
+*Source Json*
+```
+property1: [
+	{
+		myObject: {
+			anotherObject: "Another Object"
+		}
+	},
+	{
+		myObject: {
+			anotherObject: "Another Object"
+		}
+	},
+	{
+		myObject: {
+			anotherObject: "Another Object"
+		}
+	}
+]
+```
+Then your definition should look like this now `["property1", ["myObject", "anotherObject"]]` .
+You can still add items after "anotherObject" as long as values inside "anotherObject" is nested objects.
 
 ##More examples
 
