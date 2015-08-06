@@ -154,10 +154,10 @@ students: [
 };
 
 var destDefinition = {
-	q1Grades: ["students", ["grades"["q1]]],
-	q2Grades: ["students", ["grades"["q2]]],
-	q3Grades: ["students", ["grades"["q3]]],
-	q4Grades: ["students", ["grades"["q4]]]
+	q1Grades: ["students", ["grades",["q1"]]],
+	q2Grades: ["students", ["grades",["q2"]]],
+	q3Grades: ["students", ["grades",["q3"]]],
+	q4Grades: ["students", ["grades",["q4"]]]
 }
 var result = jsonTranslate(originalJson, destDefinition);
 ```
