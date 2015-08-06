@@ -7,11 +7,13 @@ Translate json object to another json object
 ##Installation
 
 ##Usage
-`var jsonTranslate = require("json-translate");`
-`var newJson = jsonTranslate(sourceJson, destDefinition);`
+```
+var jsonTranslate = require("json-translate");
+var newJson = jsonTranslate(sourceJson, destDefinition);
+```
 
 E.g.
-* To get value from object hierarchy
+To get value from object hierarchy
 
 *Source Json*
 ```
@@ -21,7 +23,7 @@ property1: {
 ```
 define it in an array with property name values`["property1", "myObject"]`
 
-* To get value of a property from array of objects
+To get value of a property from array of objects
 ```
 property1 : [
 	{
@@ -72,7 +74,7 @@ var destDefinition = {
 	value10: ["prop1", "prop10"]
 };
 
-var result = jsonTranslate(originalJson, destDefinition)
+var result = jsonTranslate(originalJson, destDefinition);
 ```
 
 The result will be 
@@ -130,6 +132,7 @@ var destDefinition = {
 	q3Grades: ["students", ["grades"["q3]]],
 	q4Grades: ["students", ["grades"["q4]]]
 }
+var result = jsonTranslate(originalJson, destDefinition);
 ```
 
 The result will be
@@ -137,7 +140,7 @@ The result will be
 {
 	q1Grades: ["A", "B", "C"],
 	q2Grades: ["A+", "B+", "C+"],
-	q2Grades: ["D", "E", "F"],
-	q2Grades: ["D+", "E+", "F+"],
+	q3Grades: ["D", "E", "F"],
+	q4Grades: ["D+", "E+", "F+"],
 }
 ```
