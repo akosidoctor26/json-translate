@@ -1,18 +1,27 @@
 {
-  "name": "json-translator",
+  "name": "json-translate",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "json-translate.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "underscore": "^1.8.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akosidoctor/json-translate.git"
   },
-  "devDependencies": {
-    "chai": "^3.2.0",
-    "mocha": "^2.2.5"
-  }
+  "keywords": [
+    "node",
+    "js",
+    "json"
+  ],
+  "author": "Kristine Doc <mskristinedoctor@gmail.com> (https://github.com/akosidoctor26)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akosidoctor/json-translate/issues"
+  },
+  "homepage": "https://github.com/akosidoctor/json-translate#readme"
 }
